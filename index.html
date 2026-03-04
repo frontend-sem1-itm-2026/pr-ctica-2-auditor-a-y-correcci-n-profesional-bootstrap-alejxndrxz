@@ -17,7 +17,7 @@
   <!-- NAVBAR (con errores intencionales) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container">
-    <a class="navbar-brand" href="#menu-principal">Mi sitio</a>
+    <a class="navbar-brand" href="#">Mi sitio</a>
 
     <!-- ERROR intencional: el toggler apunta a un id que NO existe -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal">
@@ -28,21 +28,22 @@
     <div class="collapse navbar-collapse" id="menu-principal">
       <ul class="navbar-nav ms-auto">
         <!-- ERROR intencional: href="#" sin funcionalidad -->
-        <li class="nav-item"><a class="nav-link" href="#menu-principal">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
     </div>
+</div>
   </nav>
 
   <!-- HERO (poco spacing, jerarquía débil a propósito) -->
   <section id="inicio" class="bg-light py-5">
     <div class="container text-center">
       <h1 class="display-4 mb-3">Bienvenido</h1>
-      <p class="lead">Esta landing tiene errores. Tu trabajo es auditarlos y corregirlos.</p>
+      <p class="lead mb-4">Esta landing tiene errores. Tu trabajo es auditarlos y corregirlos.</p>
 
       <!-- Botón sin acción real -->
-      <a href="#contacto" class="btn btn-primary">Agendar</a>
+      <a href="#contacto" class="btn btn-primary btn-lg">Agendar</a>
     </div>
   </section>
 
@@ -118,9 +119,9 @@
   </section>
 
   <!-- CONTACTO (id existe, pero navbar NO navega aquí por href #) -->
-  <section id="contacto">
+  <section id="contacto" class="py-5">
     <div class="container">
-      <h2>Contacto</h2>
+      <h2 class="mb-4">Contacto</h2>
 
       <form>
         <div class="mb-3">
